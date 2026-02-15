@@ -1,13 +1,11 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight.css" layer(base);
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
 @theme {
   
   /*
   color
   theme: --color-[name]
-  usage: [attribute]-[name] e.g. text-red 
+  usage: utility-token e.g. text-accent-400
    */
   --color-accent-400: hsl(12, 88%, 59%);
   --color-accent-100: hsl(13, 100%, 96%);
