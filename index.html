@@ -14,16 +14,7 @@
   </head>
 
   <body class="text-body font-body text-primary-400">
-    <header class="
-    primary-header pt-(--size-700)
-    relative
-    data-overlay:before:content-['']
-    data-overlay:before:fixed
-    data-overlay:before:inset-0
-    data-overlay:before:bg-linear-to-b
-    data-overlay:before:from-[rgb(0_0_0/0)]
-    data-overlay:before:to-[rgb(0_0_0/0.8)]
-    ">
+    <header class="primary-header header-overlay">
       <div class="div-container">
         <div class="nav-wrapper | flex items-center justify-between">
           <a href="#"><img src="./images/logo.svg" alt="manage logo"></a>
@@ -32,24 +23,16 @@
             <img class="icon-close | hidden data-visible:block" src="images/icon-close.svg" alt="" aria-hidden="true">
             <span class="visually-hidden">Menu</span>
           </button>
-          <nav class="primary-navigation | 
-              hidden fixed inset-[7rem_var(--size-400)_auto] max-w-100 ml-auto
-              bg-neutral-900 rounded-(--size-100) p-(--size-700)
-              shadow-[0_0_0.25em_rgb(0,0,0,0.5)]
-              data-visible:block
-              md:flex md:inset-auto md:max-w-none
-              md:shadow-none md:rounded-none
-              md:bg-transparent
-              md:static" id="primary-navigation">
+          <nav class="primary-navigation" id="primary-navigation">
             <ul aria-label="Primary" role="list" class="nav-list | 
                 grid gap-(--size-600) text-center font-bold
                 md:flex md:gap-[clamp(--size-400, 5vw, --size-700)]
                 ">
-              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Pricing</a></li>
-              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Product</a></li>
-              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">About Us</a></li>
-              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Careers</a></li>
-              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Community</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
             </ul>
           </nav>
           <button class="button | hidden md:inline-flex">Get Started</button>
