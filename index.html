@@ -33,25 +33,26 @@
             <span class="visually-hidden">Menu</span>
           </button>
           <nav class="primary-navigation | 
-              hidden fixed inset-[7rem_var(--size-400)_auto] bg-neutral-900
-              rounded-(--size-100) p-(--size-700)
+              hidden fixed inset-[7rem_var(--size-400)_auto] max-w-100 ml-auto
+              bg-neutral-900 rounded-(--size-100) p-(--size-700)
               shadow-[0_0_0.25em_rgb(0,0,0,0.5)]
-              data-visible:block 
-              md:flex md:inset-auto
+              data-visible:block
+              md:flex md:inset-auto md:max-w-none
+              md:shadow-none md:rounded-none
               md:bg-transparent
               md:static" id="primary-navigation">
             <ul aria-label="Primary" role="list" class="nav-list | 
                 grid gap-(--size-600) text-center font-bold
-                md:flex 
+                md:flex md:gap-[clamp(--size-400, 5vw, --size-700)]
                 ">
-              <li><a href="#" class="no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Pricing</a></li>
-              <li><a href="#" class="no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Product</a></li>
-              <li><a href="#" class="no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">About Us</a></li>
-              <li><a href="#" class="no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Careers</a></li>
-              <li><a href="#" class="no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Community</a></li>
+              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Pricing</a></li>
+              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Product</a></li>
+              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">About Us</a></li>
+              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Careers</a></li>
+              <li><a href="#" class="font-bold md:font-semi-bold no-underline text-primary-400 hover:text-accent-400 focus:text-accent-400">Community</a></li>
             </ul>
           </nav>
-          <button class="button | hidden">Get Started</button>
+          <button class="button | hidden md:inline-flex">Get Started</button>
         </div>  
       </div>
     </header>
