@@ -89,19 +89,52 @@
 
   .header-overlay[data-overlay]::before{
     @apply 
-      content-[''] fixed inset-0
-      bg-linear-to-b from-[rgb(0_0_0/0)] to-[rgb(0_0_0/0.8)];
+    content-[''] fixed inset-0
+    bg-linear-to-b from-[rgb(0_0_0/0)] to-[rgb(0_0_0/0.8)];
   }
-
+  
   .primary-navigation {
     @apply
-      hidden fixed inset-[7rem_var(--size-400)_auto]
-      bg-neutral-900 rounded-(--size-100)
-      p-(--size-700) shadow-[0_0_0.25em_rgb(0,0,0,0.5)];
+    hidden fixed inset-[7rem_var(--size-400)_auto]
+    bg-neutral-900 rounded-(--size-100)
+    p-(--size-700) shadow-[0_0_0.25em_rgb(0,0,0,0.5)];
+  }
+  
+  .even-columns{
+    display: grid;
+    gap: 1rem;
   }
 
   .primary-navigation[data-visible] {
     @apply block;
+  }
+
+  .mobile-nav-toggle{
+    @apply cursor-pointer bg-transparent border-0 p-[0.5em] block fixed top-(--size-700) right-(--size-400) md:hidden;
+  }
+
+  .cta{
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+  }
+  
+  @media (min-width: 50em){
+    .cta{
+      text-align: left;
+    }
+   
+  }
+
+  .cta::before{
+    content: "";
+    position: absolute;
+    /* z-index: -1; */
+    inset: 0;
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position: -15rem -5rem, 80rem -42rem;
+    opacity: 0.1;
   }
 
   @media (min-width: 48em) {
@@ -145,10 +178,6 @@
     padding-block: var(--size-900);
   }
 
-  .even-columns{
-    display: grid;
-    gap: 1rem;
-  }
   
   @media (min-width: 50em){
     @theme{

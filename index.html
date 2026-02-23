@@ -18,7 +18,7 @@
       <div class="div-container">
         <div class="nav-wrapper | flex items-center justify-between">
           <a href="#"><img src="./images/logo.svg" alt="manage logo"></a>
-          <button class="mobile-nav-toggle | cursor-pointer bg-transparent border-0 p-[0.5em] block fixed top-(--size-700) right-(--size-400) md:hidden" aria-controls="primary-navigation" aria-expanded="false">
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img class="icon-hamburger | data-visible:hidden" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
             <img class="icon-close | hidden data-visible:block" src="images/icon-close.svg" alt="" aria-hidden="true">
             <span class="visually-hidden">Menu</span>
@@ -108,12 +108,16 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | even-columns padding-block-700 bg-accent-400 text-neutral-100">
+      <section class="cta | even-columns padding-block-900 bg-accent-400 text-neutral-900">
         <div class="div-container">
-          <p class="text-secondary-heading font-bold">Simplify how your team works today.</p>
-        </div>
-        <div>
-          <button class="button" data-type="inverted">Get Started</button>
+          <div class="even-columns | md:items-center">
+            <div>
+              <p class="text-primary-heading font-bold">Simplify how your team works today.</p>
+            </div>
+            <div class="md:justify-self-end">
+              <button class="button" data-type="inverted">Get Started</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
