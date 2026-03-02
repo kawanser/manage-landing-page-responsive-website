@@ -178,7 +178,33 @@
     padding-block: var(--size-900);
   }
 
-  
+  .footer-nav{
+    padding: 2rem auto;
+    columns: 2;
+  }
+
+  .footer-nav a{
+    color: var(--color-neutral-900);
+    text-decoration: none;
+  }
+
+  .footer-nav a:is(:hover, :focus){
+    color: var(--color-accent-400);
+  }
+
+  .social-list{
+    display: flex;
+    gap: var(--size-400);
+  }
+
+  .social-icon {
+    @apply w-(--size-600) md:w-(--size-500);
+  }
+
+   .social-list a:is(:hover,:focus) .social-icon{
+    fill: var(--color-accent-400);
+   }
+
   @media (min-width: 50em){
     @theme{
     --text-body: var(--text-500);
